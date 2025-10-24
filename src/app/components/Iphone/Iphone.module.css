@@ -1,0 +1,263 @@
+.containerOne {
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    min-height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    transition: all 0.4s ease;
+}
+
+.componentOne {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 500px;
+}
+
+.componentOne h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.1;
+}
+
+.componentOne span {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.componentTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card1 img {
+    width: 350px !important;
+    height: auto !important;
+    transition: all 0.3s ease;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.color1,
+.color2,
+.color3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.3s ease;
+}
+
+.color1 {
+    background-color: #4a5067;
+}
+
+.color2 {
+    background-color: #d1d1d1;
+}
+
+.color3 {
+    background-color: #f09453;
+}
+
+.active {
+    transform: scale(1.4);
+    border: 3px solid #fff;
+}
+
+.change {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.changeWatch1 img,
+.changeWatch2 img,
+.changeWatch3 img {
+    position: absolute;
+    top: -35px;
+    width: 85px !important;
+    height: auto !important;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.changeWatch1,
+.changeWatch2,
+.changeWatch3 {
+    width: 130px;
+    height: 65px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: visible;
+}
+
+.changeWatch1 {
+    background-color: #4a5067;
+}
+
+.changeWatch2 {
+    background-color: #d1d1d1;
+}
+
+.changeWatch3 {
+    background-color: #f09453;
+}
+
+.activeWatch {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1220px) {
+    .componentOne h1 {
+        font-size: 50px;
+    }
+
+    .componentOne span {
+        font-size: 40px;
+    }
+
+    .card1 img {
+        width: 320px !important;
+    }
+}
+
+@media screen and (max-width: 1009px) {
+    .componentOne h1 {
+        text-align: center;
+    }
+
+    .componentOne {
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .containerOne {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .componentOne {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .componentOne h1 {
+        font-size: 45px;
+    }
+
+    .componentOne span {
+        font-size: 36px;
+    }
+
+    .card1 img {
+        width: 280px !important;
+    }
+
+    .changeWatch1,
+    .changeWatch2,
+    .changeWatch3 {
+        width: 110px;
+        height: 65px;
+    }
+
+    .changeWatch1 img,
+    .changeWatch2 img,
+    .changeWatch3 img {
+        width: 70px !important;
+        top: -30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .containerOne {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .componentOne h1 {
+        font-size: 34px;
+    }
+
+    .componentOne span {
+        font-size: 28px;
+    }
+
+    .card1 img {
+        width: 230px !important;
+    }
+
+    .color1,
+    .color2,
+    .color3 {
+        width: 15px;
+        height: 15px;
+    }
+
+    .change {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .changeWatch1,
+    .changeWatch2,
+    .changeWatch3 {
+        width: 90px;
+        height: 55px;
+    }
+
+    .changeWatch1 img,
+    .changeWatch2 img,
+    .changeWatch3 img {
+        width: 60px !important;
+        top: -25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .componentOne h1 {
+        font-size: 28px;
+    }
+
+    .componentOne span {
+        font-size: 20px;
+    }
+}
